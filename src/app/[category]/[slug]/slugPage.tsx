@@ -2,16 +2,11 @@
 import React, { useState } from "react";
 
 import { Button } from "@/components/ui/button";
-
-import Image from "next/image";
-import { FiShoppingCart } from "react-icons/fi";
 import { FaHeart } from "react-icons/fa";
 import { FiPlus } from "react-icons/fi";
 import { FiMinus } from "react-icons/fi";
 import SlugComponent from "@/components/SlugComponent";
 import { useAppSelector } from "../../store/hooks";
-import { useDispatch } from "react-redux";
-import { addItems, addToCArd } from "@/app/store/features/cart";
 import AddTocardToast from "@/components/addTocardToast";
 
 const SlugPage = ({ params }: { params: { slug: string } }) => {
@@ -93,7 +88,7 @@ const SlugPage = ({ params }: { params: { slug: string } }) => {
                   Color
                 </span>
                 {slug[0].colors.map((color: string) => (
-                  <button
+                  <button key={color}
                     className={`border-2 active:border-myBlackHead border-gray-300  rounded-full w-6 h-6 focus:outline-none
                        `}
                     style={{ backgroundColor: color }}

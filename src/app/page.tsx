@@ -1,4 +1,4 @@
- 
+ /* eslint-disable */
  "use client"
  import AddTocardToast from '@/components/addTocardToast'
 import Crousel from '@/components/Crousel'

@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { Button } from "./ui/button";
-import { FiShoppingCart } from "react-icons/fi";
+ 
 import { FaHeart } from "react-icons/fa";
 import Link from "next/link";
 import AddBestSelAddtoCard from "./addBestSelAddtoCard";
@@ -32,7 +32,7 @@ const CardsComponent = ({
         {/* image div */}
         <Link href={`/${category}/${slug}`}>
         <div className="block h-[23rem] overflow-hidden rounded-sm shadow-xl ">
-          <Image src={src} height={370} width={370} alt=""></Image>
+          <Image src={src} height={370} width={370} alt={alt}></Image>
         </div>
         </Link>
         {/* card body title paragraph  */}

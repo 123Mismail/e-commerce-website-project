@@ -4,7 +4,7 @@ import CartCard from "@/components/cartCard";
 import { Button } from "@/components/ui/button";
 import React from "react";
 import { useAppSelector } from "../store/hooks";
-import Link from "next/link";
+ 
 const CartPage = () => {
     const carts =useAppSelector((value)=>value.cart);
   
